@@ -1,0 +1,11 @@
+{
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 13.5,
+    
+    "python.defaultInterpreterPath": "/home/rane/anaconda3/envs/pytorch1.8/bin/python3.7",
+    "files.associations": {
+        "functional": "cpp",
+        "iostream": "cpp",
+        "type_traits": "cpp"
+    },
+}

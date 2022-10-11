@@ -1,0 +1,57 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                // 1 det train
+                // "--data", "data_hesuan/03_hesuan_coco128-seg.yaml",
+                // "--weights", "weights/yolov5n.pt", "--cfg", "models/yolov5n.yaml",
+                // "--epochs", "100", "--imgsz", "640", "--batch-size", "32", "--workers", "8", "--single-cls",
+
+                // 1 det val
+                // "--weights", "runs/train/exp_0929_4obj_v2/weights/best.pt",
+                // "--data", "data_hesuan/03_hesuan_coco128-seg.yaml",
+                // "--task", "test",
+
+                // 1 det detct
+                // "--weights", "runs/train/exp/weights/best.pt",
+                // "--source", "/home/rane/2TDisk/01_Projects/06_hesuan/06_yolov5_det_cls_seg/datasets/0917_all_server_data_yolo/images/20220901-00-train001_0019.jpg",
+
+                
+                // 3 seg train
+                // "--data", "data_hesuan/03_hesuan_coco128-seg.yaml",
+                // "--weights", "weights/yolov5n-seg.pt",
+                // "--cfg", "models/segment/yolov5n-seg.yaml", "--epochs", "3", 
+                // "--single-cls",
+
+                // 3 seg val
+                // "--weights", "runs/train-seg/0930_3obj_1seg_ep300/weights/best.pt",
+                // "--data", "data_hesuan/03_hesuan_coco128-seg.yaml",
+                // "--task", "test",
+
+                // 3 seg pred
+                // "--weights", "runs/train-seg/exp8/weights/best.onnx",
+                // "--source", "dataset_coco128/images/train2017/000000000025.jpg",
+                // "--source", "dataset_coco128/images/train2017/000000000061.jpg",
+
+                // 3 export
+                // "--weights", "runs/train-seg/exp8/weights/best.pt",
+                // "--imgsz", "640",
+                // "--include", "onnx", "torchscript",
+
+                // cls pred
+                "--weights", "runs/train-cls/1011_cls/weights/best.pt",
+                "--source", "/home/rane/2TDisk/01_Projects/06_hesuan/07_yolov5_det_cls_seg/datasets/01_labeled_data/01_all_0918_1004/croped_zui_images/1/59_正样本_train_24.jpg",
+            
+            ]
+        }
+    ]
+}
